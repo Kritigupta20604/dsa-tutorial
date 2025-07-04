@@ -92,14 +92,34 @@ using namespace std;
 // }
 // }
 
+
+// reverse of a num and palindrome
+// int main(){
+//     int n;
+//     cin >> n;
+//     int revNum = 0;
+//     int dup = n;
+//     while(n > 0){
+//         int ld = n % 10;
+//         revNum = (revNum * 10) + ld;
+//         n = n/10;
+//     }
+//     if(dup == revNum) cout<< "true";
+//     else cout << "false";
+// }
+
+
+// armstrong number
 int main(){
     int n;
     cin >> n;
-    int revNum = 0;
+    int sum = 0;
+    int dup = n;
     while(n > 0){
         int ld = n % 10;
-        revNum = (revNum * 10) + ld;
+        sum = sum + (ld*ld*ld);
         n = n/10;
     }
-    cout << revNum;
+    if (sum == dup) cout << "true";
+    else cout << "false";
 }
