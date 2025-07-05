@@ -110,16 +110,33 @@ using namespace std;
 
 
 // armstrong number
+// int main(){
+//     int n;
+//     cin >> n;
+//     int sum = 0;
+//     int dup = n;
+//     while(n > 0){
+//         int ld = n % 10;
+//         sum = sum + (ld*ld*ld);
+//         n = n/10;
+//     }
+//     if (sum == dup) cout << "true";
+//     else cout << "false";
+// }
+
+
+// Prime no.
 int main(){
     int n;
     cin >> n;
-    int sum = 0;
-    int dup = n;
-    while(n > 0){
-        int ld = n % 10;
-        sum = sum + (ld*ld*ld);
-        n = n/10;
+    int cnt = 0;
+    for(int i = 1; i*i<=n; i++){
+        if(n % i == 0){
+            cnt++;
+            if((n/i) != i) cnt++;
+        }
     }
-    if (sum == dup) cout << "true";
-    else cout << "false";
+    if(cnt == 2) cout <<"true";
+    else cout<<"false";
 }
+
