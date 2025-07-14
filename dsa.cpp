@@ -1,29 +1,29 @@
 #include<iostream>
 using namespace std;
-// void print1(int n){
-//     for(int i=0;i<n;i++){
-//         for(int j=0;j<n;j++){
-//         }
-//             cout << "* ";
-//     }
-// }
-// void print2(int n){
-//     for(int i=0;i<n;i++){
-//         for(int j=0;j<=i;j++){
-//             cout << "*";
-//         }
-//         cout << endl;
-//     }
-// }
+void print1(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+        }
+            cout << "* ";
+    }
+}
+void print2(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
 
-// void print3(int n){
-//     for(int i=1;i<=n;i++){
-//         for(int j=1;j<=i;j++){
-//             cout << i << " ";
-//         }
-//         cout << endl;
-//     }
-// }
+void print3(int n){
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+}
 
 // void print4(int n){
 //     for(int i=0;i<=n;i++){
@@ -126,17 +126,17 @@ using namespace std;
 
 
 // Prime no.
-int main(){
-    int n;
-    cin >> n;
-    int cnt = 0;
-    for(int i = 1; i*i<=n; i++){
-        if(n % i == 0){
-            cnt++;
-            if((n/i) != i) cnt++;
-        }
-    }
-    if(cnt == 2) cout <<"true";
-    else cout<<"false";
-}
+// int main(){
+//     int n;
+//     cin >> n;
+//     int cnt = 0;
+//     for(int i = 1; i*i<=n; i++){
+//         if(n % i == 0){
+//             cnt++;
+//             if((n/i) != i) cnt++;
+//         }
+//     }
+//     if(cnt == 2) cout <<"true";
+//     else cout<<"false";
+// }
 
